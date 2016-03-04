@@ -6,5 +6,6 @@
     function AboutController() {
         var vm = this;
 
+        vm.fx = 'fx';
     }
 })();

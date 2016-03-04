@@ -1,7 +1,12 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular
-    .module('gulpAngular', ['ngAnimate', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr']);
-
+    angular.module('gulpAngular', [
+        'ngAnimate',
+        'ngSanitize',
+        'ngResource',
+        'ui.router',
+        'ui.bootstrap',
+        'toastr'
+    ]);
 })();

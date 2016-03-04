@@ -1,11 +1,8 @@
 (function() {
     'use strict';
 
-    angular
-        .module('gulpAngular')
-        .config(routerConfig);
+    angular.module('gulpAngular').config(routerConfig);
 
-    /** @ngInject */
     function routerConfig($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('home', {

@@ -1,14 +1,10 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular
-    .module('gulpAngular')
-    .run(runBlock);
+    angular.module('gulpAngular').run(runBlock);
 
-  /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
-  }
+    function runBlock() {
+        //Any stuff before bootstrapping
+    }
 
 })();

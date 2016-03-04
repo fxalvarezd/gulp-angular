@@ -5,12 +5,12 @@
         Always a pleasure scaffolding your apps.
     </p>
     <p class="animated bounceIn">
-        <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
+        <button type="button" class="btn btn-lg btn-success" ng-click="home.showToastr()">Splendid Toastr</button>
     </p>
 </div>
 
 <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in home.awesomeThings | orderBy:'rank'">
         <div class="thumbnail animated pulse">
             <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
             <div class="caption">

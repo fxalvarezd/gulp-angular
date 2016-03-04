@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module('gulpAngular').controller('MainController', MainController);
+    angular.module('gulpAngular').controller('HomeController', HomeController);
 
-    function MainController($timeout, webDevTec, toastr) {
+    function HomeController(webDevTec, toastr) {
         var vm = this;
 
         vm.awesomeThings = [];

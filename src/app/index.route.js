@@ -21,8 +21,21 @@
                 url: '/contact',
                 templateUrl: 'app/contact/contact.html',
                 controller: 'ContactController',
-                controllerAs: 'contact'
+                controllerAs: 'contact',
+                abstract: true
             })
+                .state('contact.support', {
+                    url: '/support',
+                    templateUrl: 'app/contact/support.html'
+                })
+                .state('contact.sales', {
+                    url: '/sales',
+                    templateUrl: 'app/contact/sales.html'
+                })
+                .state('contact.info', {
+                    url: '/info',
+                    templateUrl: 'app/contact/info.html'
+                })
             ;
 
         $urlRouterProvider.otherwise('/');

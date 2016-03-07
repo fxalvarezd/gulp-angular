@@ -6,6 +6,6 @@
     function ContactController() {
         var vm = this;
 
-        vm.fx = 'fx';
+        vm.pageTitle = 'Contact Us';
     }
 })();

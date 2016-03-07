@@ -3,7 +3,7 @@
 
     angular.module('gulpAngular').controller('HomeController', HomeController);
 
-    function HomeController($timeout, webDevTec, toastr) {
+    function HomeController(webDevTec, toastr) {
         var vm = this;
 
         vm.awesomeThings = [];

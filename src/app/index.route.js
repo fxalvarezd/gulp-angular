@@ -6,7 +6,7 @@
     function routerConfig($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('home', {
-                url: '/',
+                url: '/home',
                 templateUrl: 'app/home/home.html',
                 controller: 'HomeController',
                 controllerAs: 'home'

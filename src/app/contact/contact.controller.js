@@ -6,6 +6,14 @@
     function ContactController() {
         var vm = this;
 
+        // Bindables
         vm.pageTitle = 'Contact Us';
+
+        init();
+
+        // Functions
+        function init() {
+
+        }
     }
 })();

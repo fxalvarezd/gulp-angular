@@ -1,0 +1,7 @@
+<p>See the list below for contact information:</p>
+
+<div class="alert alert-warning" ng-repeat="item in vm.list">
+    <div><b>Name:</b> {{item.name.first}} {{item.name.last}}</div>
+    <div><b>Phone:</b> {{item.phone}}</div>
+    <div><b>Email:</b> <a href="mailto:{{item.email}}">{{item.email}}</a></div>
+</div>

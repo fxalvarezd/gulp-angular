@@ -6,7 +6,7 @@
     function routerConfig($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('home', {
-                url: '/home',
+                url: '/',
                 templateUrl: 'app/home/home.html',
                 controller: 'HomeController',
                 controllerAs: 'home'
@@ -19,22 +19,22 @@
             })
             .state('contact', {
                 url: '/contact',
-                templateUrl: 'app/contact/contact.html',
+                templateUrl: 'app/contact-us/contact-us.html',
                 controller: 'ContactController',
                 controllerAs: 'contact',
                 abstract: true
             })
                 .state('contact.support', {
                     url: '/support',
-                    templateUrl: 'app/contact/support.html'
+                    templateUrl: 'app/contact-us/support.html'
                 })
                 .state('contact.sales', {
                     url: '/sales',
-                    templateUrl: 'app/contact/sales.html'
+                    templateUrl: 'app/contact-us/sales.html'
                 })
                 .state('contact.info', {
                     url: '/info',
-                    templateUrl: 'app/contact/info.html'
+                    templateUrl: 'app/contact-us/info.html'
                 })
             ;
 

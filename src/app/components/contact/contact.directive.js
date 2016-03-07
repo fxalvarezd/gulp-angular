@@ -9,7 +9,7 @@
             scope: {
                 type: '@'
             },
-            templateUrl: 'app/components/contact.directive/contact.directive.html',
+            templateUrl: 'app/components/contact/contact.html',
             controller: controller,
             controllerAs: 'vm'
         };

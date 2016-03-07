@@ -16,7 +16,14 @@
                 templateUrl: 'app/about/about.html',
                 controller: 'AboutController',
                 controllerAs: 'about'
-            });
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'app/contact/contact.html',
+                controller: 'ContactController',
+                controllerAs: 'contact'
+            })
+            ;
 
         $urlRouterProvider.otherwise('/');
     }

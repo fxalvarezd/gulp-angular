@@ -1,0 +1,28 @@
+{
+    name: {
+        first: 'John',
+        last: 'Doe',
+    phone: '(949)234-5678',
+    email: 'jdoe@email.com'
+},
+{
+    name: {
+        first: 'Peter',
+        last: 'Czech',
+    phone: '(714)333-9184',
+    email: 'pczech@keep.com'
+},
+{
+    name: {
+        first: 'Andriy',
+        last: 'Shevchenko',
+    phone: '(949)369-5555',
+    email: 'asheva@gol.com'
+},
+{
+    name: {
+        first: 'Lionel',
+        last: 'Messi',
+    phone: '(213)787-6613',
+    email: 'lio@barca.com'
+}

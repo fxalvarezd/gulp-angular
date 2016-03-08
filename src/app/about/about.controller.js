@@ -21,27 +21,36 @@
                 stored: false
             },
             {
-                description: 'Set the "Contact" page title from controller.',
+                description: 'Set the page title from the controller.',
                 stored: false
             },
             {
-                description: 'Inside the "Contact" page, create a responsive grid like the one shown in the image below.',
+                description: 'Inside the contact page create a responsive grid that shows two sections (columns) that behave as follows:',
+                stored: false,
+                substeps: [
+                    { description: 'For extra small width, both sections should be stacked and span the full width.' },
+                    { description: 'For small width, the first section should be 1/3rd of the width and the second 2/3rds of the width.' },
+                    { description: 'For medium and larger, the first section should be 1/4th of the width and the second 3/4ths of the width.' }
+                ]
+            },
+            {
+                description: 'Use the markup from the "Sidebar Nav" panel below inside the first column.',
                 stored: false
             },
             {
-                description: 'Use the markup from the "Sidebar Nav" panel below inside the "Content 1" box.',
+                description: 'Create a service that retrieves data from "test/contacts.json". Include a method that gets only the contacts of a certain type (e.g. support, sales or info).',
                 stored: false
             },
             {
-                description: 'Use Nested Routing to display content for each of the sections inside the "Contact" page.',
+                description: 'Render the "support" type contacts (using the service from above) as shown in the graphic below.',
                 stored: false
             },
             {
-                description: 'Create a "contact" directive, and include it inside each of the sections.',
+                description: 'Create a directive to render the same contacts list as above, based on type.',
                 stored: false
             },
             {
-                description: 'Create a service that retrieves data from test/contacts.json.',
+                description: 'Use Nested Routing to display different content for each of the sections from the sidebar.',
                 stored: false
             }
         ];

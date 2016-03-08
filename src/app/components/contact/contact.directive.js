@@ -13,21 +13,15 @@
             controller: controller,
             controllerAs: 'vm'
         };
-        return directive;
 
         function controller($scope, contactService) {
             var vm = this;
 
-            contactService.get(function(data){
-                var hits = data.hits;
-
-                for (var i = 0; i < hits.length; i++) {
-                    if (hits[i].type === $scope.type) {
-                        vm.list = hits[i].list;
-                        return;
-                    }
-                }
-            });            
+            contactService.getList($scope.type).then(function(data) {
+                vm.list = data;
+            });
         }
+
+        return directive;
     }
 })();

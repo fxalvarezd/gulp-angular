@@ -5,6 +5,7 @@
         'ngAnimate',
         'ngSanitize',
         'ngResource',
+        'ngStorage',
         'ui.router',
         'ui.bootstrap',
         'toastr'

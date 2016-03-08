@@ -1,18 +1,14 @@
-<div class="animated slideInDown">
+<div class="animated bounceInUp">
     <div class="page-header">
         <h1>Test Instructions</h1>
     </div>
     <p class="alert alert-danger">Complete as many items as possible within an hour.</p>
     <ul class="list-group">
-        <li class="list-group-item">Add 'Contact' page.</li>
-        <li class="list-group-item">Set proper navbar item as active.</li>
-        <li class="list-group-item">Create a Controller for the 'Contact' page.</li>
-        <li class="list-group-item">Set the 'Contact' page title from controller.</li>
-        <li class="list-group-item">Inside the 'Contact' page, create a responsive grid like the one shown in the image below.</li>
-        <li class="list-group-item">Use the markup from the 'Sidebar Nav' panel below inside the 'Content 1' box.</li>
-        <li class="list-group-item">Use Nested Routing to display content for each of the sections inside the 'Contact' page.</li>
-        <li class="list-group-item">Create a 'contact' directive, and include it inside each of the sections.</li>
-        <li class="list-group-item">Create a service that retrieves data from test/contacts.json.</li>
+        <li class="list-group-item" ng-repeat="step in about.steps">{{$index + 1}}. {{step}}
+            <label class="switch switch-lg pull-right">
+                <input type="checkbox" ng-model="switch" ng-change="about.toggleStorage($index)" ng-checked="about.storage[$index]" /><span></span>
+            </label>
+        </li>
     </ul>
     <div class="panel panel-info">
         <div class="panel-heading">Grid Mock</div>

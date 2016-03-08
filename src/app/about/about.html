@@ -4,24 +4,22 @@
     </div>
     <p class="alert alert-danger">Complete as many items as possible within an hour.</p>
     <ul class="list-group">
-        <li class="list-group-item" ng-repeat="step in about.steps">{{$index + 1}}. {{step.description}}
-            <label class="switch switch-lg pull-right">
+        <li class="list-group-item" ng-repeat="step in about.steps">
+            <label class="switch switch-lg pull-right ml-xl">
                 <input type="checkbox" ng-model="step.stored" ng-change="about.toggleStorage($index, step.stored)" /><span></span>
             </label>
+            <span>{{$index + 1}}. {{step.description}}</span>
+            <ul ng-if="step.substeps">
+                <li ng-repeat="substep in step.substeps">{{substep.description}}</li>
+            </ul>
         </li>
     </ul>
-    <div class="panel panel-info">
-        <div class="panel-heading">Grid Mock</div>
-        <div class="panel-body">
-            <img class="img-responsive" src="assets/images/grid.png">
-        </div>
-    </div>
     <div class="panel panel-info">
         <div class="panel-heading">Sidebar Nav</div>
         <div class="panel-body">
             <pre>
                 &lt;ul class="nav nav-pills nav-stacked"&gt;
-                    &lt;li&gt;
+                    &lt;li class="active"&gt;
                         &lt;a href="#">Support&lt;/a&gt;
                     &lt;/li&gt;
                     &lt;li&gt;
@@ -32,6 +30,12 @@
                     &lt;/li&gt;
                 &lt;/ul&gt;
             </pre>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Contacts Display Mock</div>
+        <div class="panel-body">
+            <img class="img-responsive" src="assets/images/contacts.png">
         </div>
     </div>
 </div>

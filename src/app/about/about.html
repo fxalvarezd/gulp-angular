@@ -1,24 +1,37 @@
-<div class="animated slideInDown">
+<div class="animated bounceInUp">
     <div class="page-header">
         <h1>Test Instructions</h1>
     </div>
-    <p class="alert alert-info">Complete as many items as possible within an hour.</p>
+    <p class="alert alert-danger">Complete as many items as possible within an hour.</p>
     <ul class="list-group">
-        <li class="list-group-item">Add Contact Page</li>
-        <li class="list-group-item">Make navbar items active</li>
-        <li class="list-group-item">Create a Controller for the Contact Page</li>
-        <li class="list-group-item">Pull page title from controller</li>
-        <li class="list-group-item">Inside the Contact page, create a responsive grid like the one shown in the image below</li>
-        <li class="list-group-item">Use Nested Routing to display contentin the Contact page.</li>
-        <li class="list-group-item">Create a contact us form directive</li>
-        <li class="list-group-item">Create a service that retrieves data from test/contacts.json</li>
-        <li class="list-group-item">HTML / CSS</li>
+        <li class="list-group-item" ng-repeat="step in about.steps">{{$index + 1}}. {{step}}
+            <label class="switch switch-lg pull-right">
+                <input type="checkbox" ng-model="switch" ng-change="about.toggleStorage($index)" ng-checked="about.storage[$index]" /><span></span>
+            </label>
+        </li>
     </ul>
-</div>
-
-<div class="panel panel-info">
-    <div class="panel-heading">Grid Mock</div>
-    <div class="panel-body">
-        <img class="img-responsive" src="assets/images/grid.png">
+    <div class="panel panel-info">
+        <div class="panel-heading">Grid Mock</div>
+        <div class="panel-body">
+            <img class="img-responsive" src="assets/images/grid.png">
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Sidebar Nav</div>
+        <div class="panel-body">
+            <pre>
+                &lt;ul class="nav nav-pills nav-stacked"&gt;
+                    &lt;li&gt;
+                        &lt;a href="#">Support&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#">Sales&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#">Info&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            </pre>
+        </div>
     </div>
 </div>

@@ -1,28 +1,75 @@
 {
-    name: {
-        first: 'John',
-        last: 'Doe',
-    phone: '(949)234-5678',
-    email: 'jdoe@email.com'
-},
-{
-    name: {
-        first: 'Peter',
-        last: 'Czech',
-    phone: '(714)333-9184',
-    email: 'pczech@keep.com'
-},
-{
-    name: {
-        first: 'Andriy',
-        last: 'Shevchenko',
-    phone: '(949)369-5555',
-    email: 'asheva@gol.com'
-},
-{
-    name: {
-        first: 'Lionel',
-        last: 'Messi',
-    phone: '(213)787-6613',
-    email: 'lio@barca.com'
+    "hits": [
+        {
+            "type": "support",
+            "list": [
+                {
+                    "name": {
+                        "first": "John",
+                        "last": "Doe"
+                    },
+                    "phone": "(949)234-5678",
+                    "email": "jdoe@email.com"
+                },
+                {
+                    "name": {
+                        "first": "Peter",
+                        "last": "Czech"
+                    },
+                    "phone": "(714)333-9184",
+                    "email": "pczech@keep.com"
+                },
+                {
+                    "name": {
+                        "first": "Andriy",
+                        "last": "Shevchenko"
+                    },
+                    "phone": "(949)369-5555",
+                    "email": "asheva@gol.com"
+                },
+                {
+                    "name": {
+                        "first": "Lionel",
+                        "last": "Messi"
+                    },
+                    "phone": "(213)787-6613",
+                    "email": "lio@barca.com"
+                }
+            ]
+        },
+        {
+            "type": "sales",
+            "list": [
+                {
+                    "name": {
+                        "first": "Stan",
+                        "last": "Lee"
+                    },
+                    "phone": "(949)555-111",
+                    "email": "slee@marvel.com"
+                },
+                {
+                    "name": {
+                        "first": "Bruce",
+                        "last": "Wayne"
+                    },
+                    "phone": "(213)555-9874",
+                    "email": "pczech@keep.com"
+                }
+            ]
+        },
+        {
+            "type": "info",
+            "list": [
+                {
+                    "name": {
+                        "first": "Sam",
+                        "last": "Wise"
+                    },
+                    "phone": "1(800)555-6666",
+                    "email": "info@info.com"
+                }
+            ]
+        }
+    ]
 }

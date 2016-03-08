@@ -4,23 +4,10 @@
     angular.module('gulpAngular').directive('acmeNavbar', acmeNavbar);
 
     function acmeNavbar() {
-        return {
+        var directive = {
             restrict: 'E',
-            templateUrl: 'app/components/navbar/navbar.html',
-            controller: AcmeNavbarController,
-            controllerAs: 'acmenav'
+            templateUrl: 'app/components/navbar/navbar.html'
         };
-
-        function AcmeNavbarController($location) {
-            var vm = this;
-
-            vm.getClass = getClass;
-
-            function getClass(page) {
-                if($location.path() == page) {
-                    return 'active';
-                }
-            }
-        }
+        return directive;
     }
 })();

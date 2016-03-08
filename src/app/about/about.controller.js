@@ -3,7 +3,7 @@
 
     angular.module('gulpAngular').controller('AboutController', AboutController);
 
-    function AboutController($scope, $localStorage) {
+    function AboutController($localStorage) {
         var vm = this;
 
         // Bindables

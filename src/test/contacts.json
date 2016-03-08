@@ -8,7 +8,7 @@
                         "first": "John",
                         "last": "Doe"
                     },
-                    "phone": "(949)234-5678",
+                    "phone": "(949) 234-5678",
                     "email": "jdoe@email.com"
                 },
                 {
@@ -16,7 +16,7 @@
                         "first": "Peter",
                         "last": "Czech"
                     },
-                    "phone": "(714)333-9184",
+                    "phone": "(714) 333-9184",
                     "email": "pczech@keep.com"
                 },
                 {
@@ -24,7 +24,7 @@
                         "first": "Andriy",
                         "last": "Shevchenko"
                     },
-                    "phone": "(949)369-5555",
+                    "phone": "(949) 369-5555",
                     "email": "asheva@gol.com"
                 },
                 {
@@ -32,7 +32,7 @@
                         "first": "Lionel",
                         "last": "Messi"
                     },
-                    "phone": "(213)787-6613",
+                    "phone": "(213) 787-6613",
                     "email": "lio@barca.com"
                 }
             ]
@@ -45,7 +45,7 @@
                         "first": "Stan",
                         "last": "Lee"
                     },
-                    "phone": "(949)555-111",
+                    "phone": "(949) 555-111",
                     "email": "slee@marvel.com"
                 },
                 {
@@ -53,7 +53,7 @@
                         "first": "Bruce",
                         "last": "Wayne"
                     },
-                    "phone": "(213)555-9874",
+                    "phone": "(213) 555-9874",
                     "email": "pczech@keep.com"
                 }
             ]
@@ -66,7 +66,7 @@
                         "first": "Sam",
                         "last": "Wise"
                     },
-                    "phone": "1(800)555-6666",
+                    "phone": "1 (800) 555-6666",
                     "email": "info@info.com"
                 }
             ]

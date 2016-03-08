@@ -4,9 +4,9 @@
     </div>
     <p class="alert alert-danger">Complete as many items as possible within an hour.</p>
     <ul class="list-group">
-        <li class="list-group-item" ng-repeat="step in about.steps">{{$index + 1}}. {{step}}
+        <li class="list-group-item" ng-repeat="step in about.steps">{{$index + 1}}. {{step.description}}
             <label class="switch switch-lg pull-right">
-                <input type="checkbox" ng-model="switch" ng-change="about.toggleStorage($index)" ng-checked="about.storage[$index]" /><span></span>
+                <input type="checkbox" ng-model="step.stored" ng-change="about.toggleStorage($index, step.stored)" /><span></span>
             </label>
         </li>
     </ul>

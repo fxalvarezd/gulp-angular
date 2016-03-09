@@ -17,8 +17,8 @@
         function controller($scope, contactService) {
             var vm = this;
 
-            contactService.getList($scope.type).then(function(data) {
-                vm.list = data;
+            contactService.getList($scope.type).then(function() {
+                vm.list = contactService.list;
             });
         }
 

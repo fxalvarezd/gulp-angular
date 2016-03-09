@@ -4,9 +4,12 @@
     angular.module('gulpAngular').factory('contactService', contactService);
 
     function contactService($resource, $q) {
-        return {
-            getList: getList
+        var service = {
+            getList: getList,
+            list: []
         };
+
+        return service;
 
         function getList(type) {
             var deferred = $q.defer();
@@ -16,7 +19,8 @@
 
                 for (var i = 0; i < hits.length; i++) {
                     if (hits[i].type === type) {
-                        deferred.resolve(hits[i].list);
+                        service.list = hits[i].list;
+                        deferred.resolve();
                     }
                 }
             });
